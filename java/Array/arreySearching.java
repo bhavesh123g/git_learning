@@ -5,15 +5,28 @@ public class arreySearching {
     Scanner input = new Scanner(System.in);
     System.out.print("Enter any number less the 30 : ");
     int inputNum = input.nextInt();
+    boolean isexists = isexist(randomNoarr, inputNum);
+
+    if(isexists){
+    System.out.println("The number "+inputNum+" exists in the string ");
+    }else{
+    System.out.println("The number "+inputNum+" does not exists in the string ");
+    }
+  }
+
+  public static boolean isexist(int arr[], int num){
 
 
     int index =0; 
-    while(index <= randomNoarr.length){
-      if(inputNum == randomNoarr[index]){
-        System.out.println("Number "+inputNum+" exists in array ");
+    while(index < arr.length){
+      if(num == arr[index]){
+       return true; 
       }
-     
       index++;
     }
+    return false;
+
   }
+
+  
 }

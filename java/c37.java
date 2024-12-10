@@ -92,4 +92,5 @@ public class c37 {
     System.out.println("\nwelcome Armstron Number calculator\n");
   }
   
+  
 }
