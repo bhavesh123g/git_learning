@@ -5,7 +5,7 @@ public class c49 {
     int[][] arr = ArrayUtility.input2Darray();
     int sum = sum2Darr(arr);
     float avg = avg2Darr(arr);
-    System.out.println("The sum of all the elements in 2-D array is : "+sum);
+     
     System.out.println("The avg of all the elements in 2-D array is : "+avg);
   }
   public static int sum2Darr(int[][] arr){

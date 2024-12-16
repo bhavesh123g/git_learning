@@ -6,9 +6,8 @@ public class c47 {
     int[] mergearr = mergearr(arr1, arr2);
     Sarr(mergearr);
     System.out.println("This is sorted array");
-  
     ArrayUtility.displayArr(mergearr);
-
+   
   }
 
  
@@ -16,9 +15,11 @@ public class c47 {
     int min;
     int i = 0;
     while(i < arr.length){
+      
       min = arr[i] ;
       int j = i;
       while(j < arr.length){
+        
       if(min > arr[j]){
         int swap = arr[i];
         arr[i] = arr[j];

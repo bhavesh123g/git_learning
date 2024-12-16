@@ -16,7 +16,7 @@ public class c45 {
 
     while(i < arr.length/2){
 
-      //System.out.println(i);
+      //System.out.println(arr.length/2);
       int swap = 0;
       swap = arr[i];
       arr[i] =arr[arr.length-1-i];
