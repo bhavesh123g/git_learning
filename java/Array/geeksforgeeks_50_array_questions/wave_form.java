@@ -7,27 +7,17 @@ public class wave_form {
 
   }
   public static void printWaveArr(int[] arr){
-    int i = 0;
-    
-   while(i < arr.length){
-      int j =i+1;
-     
+   sort.sortarrinc(arr);
+    int i = 0; 
+    while (i < arr.length-1){
 
-        if (arr[i] < arr[j]) {
-          int swap = arr[i];
-          arr[i] =arr[j];
-          arr[i] = swap;
-          
-        
+      arrayutility.swap(arr,i, i+1);
 
-        
-      }
-      i= i +2;
+      i = i+2;
     }
 
 
-
-      arrayutility.displayArr(arr);
+    arrayutility.displayArr(arr);
   }
   
 }

@@ -2,6 +2,15 @@ import java.util.Scanner;
 
 public class arrayutility {
 
+
+  // A utility method to swap two numbers.
+  public static void swap(int arr[], int a, int b)
+  {
+      int temp = arr[a];
+      arr[a] = arr[b];
+      arr[b] = temp;
+  }
+
   public static int[][] input2Darray(){
     Scanner input = new Scanner(System.in);  
     System.out.print("Enter the number of rows : ");
