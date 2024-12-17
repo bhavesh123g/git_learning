@@ -12,7 +12,7 @@ public class sort {
 
       int j = i+1;
       while(j < arr.length){
-        //System.out.println("   "+j);
+       // System.out.println(arr[i] +" >  "+arr[j]);
       if(arr[i] > arr[j]){
         int swap = arr[i];
         arr[i]= arr[j];
